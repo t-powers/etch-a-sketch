@@ -17,5 +17,7 @@ body {
 .flexGrid {
   width: 43.75px;
   height: 43.75px;
-  
+}
+.colorSquare {
+  background: black;
 }
