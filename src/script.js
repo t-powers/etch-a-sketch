@@ -1,6 +1,6 @@
 const parentDiv = document.querySelector("#parentDiv");
 const gridDiv = document.querySelectorAll(".flexGrid");
-
+const gridSize = document.querySelector("button")
 
 function colorGridElement() {
   const squareDiv = document.createElement("div");
@@ -11,6 +11,13 @@ function colorGridElement() {
   parentDiv.appendChild(squareDiv);
 }
 
+function openPrompt(){
+  let gridSize = prompt("Enter integer for custom grid size. n<=100")
+  alert(gridSize)
+}
+
 for (let i = 0; i < 256; i++) {
   colorGridElement();
 }
+
+gridSize.addEventListener("click",openPrompt)
