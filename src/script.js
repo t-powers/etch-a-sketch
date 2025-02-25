@@ -1,6 +1,6 @@
 const parentDiv = document.querySelector("#parentDiv");
 const gridDiv = document.querySelectorAll(".flexGrid");
-const gridSize = document.querySelector("button")
+const gridSizeBtn = document.querySelector("button");
 
 function colorGridElement() {
   const squareDiv = document.createElement("div");
@@ -11,18 +11,20 @@ function colorGridElement() {
   parentDiv.appendChild(squareDiv);
 }
 
-function openPrompt(){
-  let gridSize = prompt("Enter integer for custom grid size. 1 to 100")
-  if(gridSize>0 && gridSize<=100){
-    alert(`Making new grid with size of ${gridSize}`);
-  }else{
+function openPrompt() {
+  let customSize = prompt("Enter integer for custom grid size. 1 to 100");
+  
+  if (customSize > 0 && customSize <= 100) {
+    alert(`Making new grid with size of ${customSize}`);
+  } else {
     alert("Try again, use 1-100");
   }
-  
+  let gridSize = customSize**2;
+  for (let i = 0; i < gridSize; i++) {
+    colorGridElement();
+  }
 }
 
-for (let i = 0; i < 256; i++) {
-  colorGridElement();
-}
 
-gridSize.addEventListener("click",openPrompt)
+
+gridSizeBtn.addEventListener("click", openPrompt);
