@@ -12,8 +12,13 @@ function colorGridElement() {
 }
 
 function openPrompt(){
-  let gridSize = prompt("Enter integer for custom grid size. n<=100")
-  alert(`Making new grid with size of ${gridSize}`)
+  let gridSize = prompt("Enter integer for custom grid size. 1 to 100")
+  if(gridSize>0 && gridSize<=100){
+    alert(`Making new grid with size of ${gridSize}`);
+  }else{
+    alert("Try again, use 1-100");
+  }
+  
 }
 
 for (let i = 0; i < 256; i++) {
