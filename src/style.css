@@ -9,6 +9,7 @@ body {
 
 h1{
   text-align: center;
+  font-size: 1.8rem;
 }
 
 #parentDiv {
@@ -29,4 +30,19 @@ h1{
 }
 .colorSquare {
   background: black;
+}
+
+.header{
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+ 
+
+}
+.btnFormat{
+  flex: 2 1 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2rem;
 }
