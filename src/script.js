@@ -14,10 +14,11 @@ function colorGridElement() {
 function openPrompt(){
   let gridSize = prompt("Enter integer for custom grid size. n<=100")
   alert(`Making new grid with size of ${gridSize}`)
+  for (let i = 0; i < gridSize; i++) {
+    colorGridElement();
+  }
 }
 
-for (let i = 0; i < 256; i++) {
-  colorGridElement();
-}
+
 
 gridSize.addEventListener("click",openPrompt)
