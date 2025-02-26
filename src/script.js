@@ -11,11 +11,6 @@ function colorGridElement() {
   parentDiv.appendChild(squareDiv);
 }
 
-<<<<<<< HEAD
-function openPrompt(){
-  let gridSize = prompt("Enter integer for custom grid size. n<=100")
-  alert(`Making new grid with size of ${gridSize}`)
-=======
 function openPrompt() {
   let customSize = prompt("Enter integer for custom grid size. 1 to 100");
   
@@ -25,16 +20,11 @@ function openPrompt() {
     alert("Try again, use 1-100");
   }
   let gridSize = customSize**2;
->>>>>>> a08df2cc10756459ef944d228795fb80a8a6251a
   for (let i = 0; i < gridSize; i++) {
     colorGridElement();
   }
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> a08df2cc10756459ef944d228795fb80a8a6251a
 
 
 gridSizeBtn.addEventListener("click", openPrompt);
