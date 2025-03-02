@@ -25,6 +25,4 @@ function openPrompt() {
   }
 }
 
-
-
 gridSizeBtn.addEventListener("click", openPrompt);
