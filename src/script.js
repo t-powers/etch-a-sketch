@@ -19,10 +19,11 @@ function openPrompt() {
   let parentSize = 400 / customSize;
   if (customSize > 0 && customSize <= 100) {
     alert(`Making new grid with size of ${customSize}`);
+    colorGridElement(customSize);
   } else {
     alert("Try again, use 1-100");
   }
-  colorGridElement(customSize);
+  
 }
 
 gridSizeBtn.addEventListener("click", openPrompt);
