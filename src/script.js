@@ -16,14 +16,12 @@ function openPrompt() {
   let customSize = parseInt(
     prompt("Enter integer for custom grid size. 1 to 100")
   );
-  let parentSize = 400 / customSize;
   if (customSize > 0 && customSize <= 100) {
     alert(`Making new grid with size of ${customSize}`);
-    colorGridElement(customSize);
   } else {
     alert("Try again, use 1-100");
   }
-  
+  colorGridElement(customSize);
 }
 
 gridSizeBtn.addEventListener("click", openPrompt);
