@@ -27,8 +27,6 @@ h1{
 .flexGrid {
   width: 25px;
   height: 25px;
-  display: flex;
-  flex-wrap: wrap;
 }
 .colorSquare {
   background: black;
