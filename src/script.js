@@ -24,8 +24,7 @@ function openPrompt() {
   } else {
     alert("Try again, use 1-100");
   }
-  let gridSize = customSize ** 2;
-  for (let i = 0; i < gridSize; i++) {
+  for (let i = 0; i < customSize; i++) {
     colorGridElement();
   }
 }
