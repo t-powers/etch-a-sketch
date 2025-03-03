@@ -1,11 +1,6 @@
 const parentDiv = document.querySelector("#parentDiv");
 const gridDiv = document.querySelector(".flexGrid");
-const gridSizeBtn = document.querySelector("button");
-const clearBtn = document.querySelector("button");
-
-function resetCells() {
-  parentDiv.innerHTML = "";
-}
+const gridSizeBtn = document.querySelector(".btnFormat");
 
 function colorGridElement() {
   const squareDiv = document.createElement("div");
@@ -30,4 +25,4 @@ function openPrompt() {
 }
 
 gridSizeBtn.addEventListener("click", openPrompt);
-clearBtn.addEventListener("click", resetCells);
+
