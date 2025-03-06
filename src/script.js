@@ -12,6 +12,7 @@ function createGrid() {
   const gridEl = document.createElement("div");
   gridEl.style.backgroundColor = "black";
   gridEl.classList.add("gridEl");
+  gridEl.textContent = "k";
   container.appendChild(gridEl);
 }
 
