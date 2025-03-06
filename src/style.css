@@ -2,3 +2,6 @@
   display: grid;
   border: 1px solid red;
 }
+.gridEl {
+  background-color: azure;
+}
