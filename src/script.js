@@ -8,7 +8,6 @@ function gridSize() {
   createGrid();
 }
 
-
 gridButton.addEventListener("click", gridSize);
 
 /* 
