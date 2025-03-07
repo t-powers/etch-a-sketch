@@ -19,3 +19,11 @@ function createGrid() {
 }
 
 gridButton.addEventListener("click", gridSize);
+
+/* 
+Prompt grid size, assign number to variable
+Add size to inline style - col, row
+Call hover function
+Create hover function
+Add div using createElement
+ */
