@@ -8,12 +8,21 @@ function gridSize() {
   createGrid();
 }
 
-function createGrid() {
-  const gridEl = document.createElement("div");
-  gridEl.style.backgroundColor = "black";
-  gridEl.classList.add("gridEl");
+const gridEl = document.createElement("div");
+gridEl.classList.add("gridEl");
+gridEl.addEventListener("mouseover", (e) => {
   gridEl.textContent = "k";
+  gridEl.style.backgroundColor = "black";
   container.appendChild(gridEl);
-}
+});
+console.log(gridEl);
 
 gridButton.addEventListener("click", gridSize);
+
+/* 
+Prompt grid size, assign number to variable
+Add size to inline style - col, row
+Call hover function
+Create hover function
+Add div using createElement
+ */
