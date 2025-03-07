@@ -5,19 +5,20 @@ function gridSize() {
   const gridSize = prompt("Enter grid size, 1-100");
   container.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
   container.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
-  //createGrid();
+  createGrid();
 }
 
 function createGrid() {
-  const grid = document.createElement("div");
-  grid.classList.add("divClass");
-  grid.textContent = "hi";
-  grid.style.backgroundColor = "black";
-  container.appendChild(grid);
+  for (let i = 0; i < 25; i++) {
+    const gridEl = document.createElement("div");
+
+    gridEl.classList.add("gridEl");
+    gridEl.textContent = "k";
+    container.appendChild(gridEl);
+  }
 }
 
 gridButton.addEventListener("click", gridSize);
-grid.addEventListener("mouseover", createGrid);
 
 /* 
 Prompt grid size, assign number to variable
