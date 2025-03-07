@@ -8,14 +8,6 @@ function gridSize() {
   createGrid();
 }
 
-const gridEl = document.createElement("div");
-gridEl.classList.add("gridEl");
-gridEl.addEventListener("mouseover", (e) => {
-  gridEl.textContent = "k";
-  gridEl.style.backgroundColor = "black";
-  container.appendChild(gridEl);
-});
-console.log(gridEl);
 
 gridButton.addEventListener("click", gridSize);
 
