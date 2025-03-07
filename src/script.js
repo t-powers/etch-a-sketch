@@ -9,11 +9,13 @@ function gridSize() {
 }
 
 function createGrid() {
-  const gridEl = document.createElement("div");
-  gridEl.style.backgroundColor = "black";
-  gridEl.classList.add("gridEl");
-  gridEl.textContent = "k";
-  container.appendChild(gridEl);
+  for (let i = 0; i < 25; i++) {
+    const gridEl = document.createElement("div");
+
+    gridEl.classList.add("gridEl");
+    gridEl.textContent = "k";
+    container.appendChild(gridEl);
+  }
 }
 
 gridButton.addEventListener("click", gridSize);
