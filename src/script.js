@@ -4,6 +4,7 @@ const p = document.createElement("p");
 const h3 = document.createElement("h3");
 const pinkDiv = document.createElement("div");
 const h1 = document.createElement("h1");
+const p1 = document.createElement("p");
 
 content.classList.add("content");
 content.textContent = "Hello World";
@@ -20,10 +21,14 @@ pinkDiv.classList.add("pink-div");
 pinkDiv.style.border = "1px solid black";
 pinkDiv.style.backgroundColor = "pink";
 
-h1.classList.add("h1-class")
+h1.classList.add("h1-class");
 h1.textContent = "I'm in a div";
-pinkDiv.appendChild("h1-class")
 
+p1.classList.add("p1-class");
+p1.textContent = "ME TOO!";
+
+pinkDiv.appendChild(h1);
+pinkDiv.appendChild(p1)
 
 container.appendChild(content);
 container.appendChild(p);
