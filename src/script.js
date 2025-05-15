@@ -23,12 +23,14 @@ pinkDiv.style.backgroundColor = "pink";
 
 h1.classList.add("h1-class");
 h1.textContent = "I'm in a div";
+h1.style.border = "1px solid black";
+
 
 p1.classList.add("p1-class");
 p1.textContent = "ME TOO!";
 
 pinkDiv.appendChild(h1);
-pinkDiv.appendChild(p1)
+pinkDiv.appendChild(p1);
 
 container.appendChild(content);
 container.appendChild(p);
