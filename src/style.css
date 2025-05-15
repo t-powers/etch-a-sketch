@@ -1,11 +1,12 @@
 .container {
-  display: grid;
+  display: flex;
+  justify-content: center;
   border: 1px solid red;
   width: 500px;
   height: 500px;
 }
-.gridEl {
-  margin: 0;
-  width: 100px;
-  height: 100px;
+.content {
+  display: flex;
+  align-items: center;
+  border: 1px solid blue;
 }
