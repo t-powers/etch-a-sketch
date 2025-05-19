@@ -34,7 +34,20 @@
 
       listButton.addEventListener("click", () => {
         let inputValue = listInput.value;
-        
+        listInput.value = "";
+        const listItem = document.createElement("li");
+        const listSpan = document.createElement("span");
+        const listButton = document.createElement("button");
+        listItem.appendChild(listSpan);
+        listItem.appendChild(listButton);
+        listSpan.textContent = inputValue;
+        listButton.textContent = "Delete";
+        listUl.appendChild(listItem);
+        listButton.addEventListener("click", () => {
+          listItem.remove();
+        });
+
+        listInput.focus();
       });
     </script>
   </body>
