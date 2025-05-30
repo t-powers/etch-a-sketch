@@ -1,13 +1,13 @@
 const container = document.querySelector(".container");
 
-const setValue = 64;
+let setValues = prompt("Pick a number");
 const containerH = 956;
 const containerW = 956;
-const childDivHeight = parseInt(containerH / setValue)-2;
-const childDivWidth = parseInt(containerW / setValue)-2;
+const childDivHeight = parseInt(containerH / setValues);
+const childDivWidth = parseInt(containerW / setValues);
 
-for (let i = 0; i < setValue; i++) {
-  for (let h = 0; h < setValue; h++) {
+for (let i = 0; i < setValues; i++) {
+  for (let h = 0; h < setValues; h++) {
     let square = document.createElement("div");
     square.classList.add("square");
     square.style.width = childDivWidth + "px";
