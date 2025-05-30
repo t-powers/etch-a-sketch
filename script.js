@@ -21,17 +21,15 @@ valueButton.addEventListener("click", () => {
         square.style.width = childDivWidth + "px";
         square.style.height = childDivHeight + "px";
         container.appendChild(square);
-
+        
         // draw in black only - just for now
         square.addEventListener("mouseover", () => {
           square.style.background = "black";
         });
-
         // click square to erase color
         square.addEventListener("click", () => {
           square.style.background = "";
         });
-        
         // click to remove all color and start over
         restart.addEventListener("click", () => {
           square.style.background = "";
