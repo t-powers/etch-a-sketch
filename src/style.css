@@ -10,6 +10,9 @@ body {
   align-items: center;
   margin-bottom: 30px;
 }
+button {
+  margin: 5px;
+}
 
 .container {
   border: 1px solid black;
@@ -22,4 +25,6 @@ body {
 }
 .square {
   flex: 1 1 auto;
+  margin: 0;
+  padding: 0;
 }
