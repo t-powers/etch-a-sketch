@@ -1,3 +1,0 @@
-# etch a sketch
-
-:p
