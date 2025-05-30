@@ -15,4 +15,8 @@ body {
   height: 960px;
   margin-left: auto;
   margin-right: auto;
+  flex-wrap: wrap;
+}
+.square {
+  flex: 1 1 auto;
 }
